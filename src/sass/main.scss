@@ -4,4 +4,7 @@
  */
 
 // Style dla pliku z przykładem HTML fragmentu
+@use './utils/vars' as *;
+@import './utils/mixins.scss';
+@import './partials/body.scss';
 @import './example';
