@@ -3,7 +3,7 @@
   flex-direction: column;
   gap: 30px;
   padding-top: 10px;
-
+  margin: 0 30px;
   &__bg {
     background-color: $howItsMadeBackground;
   }
@@ -25,6 +25,12 @@
     text-align: center;
     width: fit-content;
     margin: 40px auto 0px 20px;
+    font-family: DM Sans;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.83;
+    letter-spacing: 0.04em;
+    text-align: center;
   }
   &__box--color {
     color: $defaultBackground;
@@ -36,17 +42,36 @@
     width: fit-content;
     margin: 40px auto 0px 20px;
     background-color: $milkshakesBackground;
+    font-family: DM Sans;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.83;
+    letter-spacing: 0.04em;
+    text-align: center;
   }
 
   &__contact {
     list-style-type: none;
     text-decoration: none;
     color: $lightTextColor;
+    font-family: DM Sans;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0em;
+    text-align: left;
   }
 
   &__titles {
     color: $defaultTextColor;
     padding-left: 20px;
+    padding-top: 10px;
+    text-align: left;
+    font-family: DM Sans;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.83;
+    letter-spacing: 0em;
     text-align: left;
   }
 
@@ -57,15 +82,45 @@
     padding-bottom: 10px;
     padding: 25px 20px 10px 20px;
     text-align: left;
+    font-family: DM Sans;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.83;
+    letter-spacing: 0.04em;
+    text-align: left;
   }
 
   &__time-open {
     color: $pinkBackground2;
-    padding: 10px 10px;
+    margin-left: 20px;
+    text-align: left;
+    font-family: DM Sans;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.83;
+    letter-spacing: 0em;
     text-align: left;
   }
 
   &__text {
-    margin-left: 20px;
+    color: $lightTextColor;
+    margin: 0 20px;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-bottom: solid 1px $quoteIconColor;
+    font-family: DM Sans;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    margin: 25px 20px 43px 20px;
+    border-top: 1px solid $quoteIconColor;
+    padding-top: 25px;
   }
 }
