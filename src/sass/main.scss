@@ -6,5 +6,8 @@
 @use './utils/vars' as *;
 @import './utils/mixins.scss';
 @import './partials/body.scss';
+@import './partials/footer.scss';
 @import './example';
-@import './partials/contacts'
+@import './partials/hero-header';
+@import './partials/button';
+@import './partials/contacts';
