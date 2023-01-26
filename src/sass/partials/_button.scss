@@ -1,0 +1,17 @@
+.button {
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+  align-items: center;
+  padding: 12px;
+  cursor: pointer;
+
+  &--products {
+    background-color: $headTextColor;
+    color: $defaultBackground;
+  }
+  &--made {
+    background-color: $defaultBackground;
+    color: $headTextColor;
+  }
+}
