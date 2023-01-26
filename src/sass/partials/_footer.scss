@@ -1,18 +1,92 @@
 .footer {
+  padding-top: 113px;
   background: $footerBackground;
 
   &__titles {
     display: flex;
     flex-direction: column;
+    font-family: 'Titan One';
+    font-weight: 400;
+    text-transform: uppercase;
     gap: 17px;
   }
+
   &__small-title {
     color: $pinkBackground2;
-    font-family: 'Titan One';
     font-size: 18px;
-    font-weight: 400;
     line-height: 1.16;
     max-width: 232px;
-    text-transform: uppercase;
+  }
+
+  &__big-title {
+    color: $headTextColor;
+    font-size: 34px;
+    line-height: 1.14;
+    letter-spacing: 0.04rem;
+    max-width: 200px;
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+    padding: 43px 0;
+  }
+
+  &__social-list {
+    display: flex;
+    justify-content: end;
+    gap: 28px;
+  }
+
+  &__social-item {
+    background: $defaultSvgColor;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.6s ease;
+
+    &:hover,
+    &:focus {
+      background-color: $headTextColor;
+    }
+  }
+
+  &__social-icon {
+    fill: $defaultBackground;
+  }
+
+  &__phone {
+    color: $defaultTextColor;
+    display: flex;
+    justify-content: end;
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.86;
+    gap: 4px;
+  }
+  &__phone-number {
+    color: $headTextColor;
+  }
+
+  &__end {
+    padding: 22px 0 25px;
+    border-top: 1px solid $quoteIconColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__copyright,
+  &__copyright-description {
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.52;
+    color: $lightTextColor;
   }
 }
