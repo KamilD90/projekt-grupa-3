@@ -1,0 +1,56 @@
+.about {
+  background-color: $howItsMadeBackground;
+  padding-top: 125px;
+
+  &__section {
+    font-family: Titan One;
+    font-weight: 400;
+    line-height: 1.14;
+    text-align: center;
+    width: 200px;
+    margin: 0 41px 26px 39px;
+  }
+
+  &__title-info {
+    font-size: 18px;
+    color: $pinkBackground2;
+  }
+
+  &__title {
+    margin-top: 15px;
+    font-size: 34px;
+    letter-spacing: 0.04em;
+    color: $headTextColor;
+  }
+
+  &__text {
+    text-align: left;
+  }
+
+  &__section-text {
+    color: $defaultTextColor;
+    padding: 0 30px;
+    margin-top: 46px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.62;
+  }
+
+  &__section-milk {
+    margin-top: 47px;
+    padding: 0 30px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.62;
+    color: $lightTextColor;
+  }
+
+  &__button {
+    margin: 47px 74px 0 30px;
+  }
+}
+
+.break {
+  padding-top: 10px;
+  display: block;
+}
