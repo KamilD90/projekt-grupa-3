@@ -2,6 +2,7 @@
   background-color: $pinkBackground1;
   position: relative;
   height: 502px;
+  overflow: hidden;
 
   &__wrapper {
     display: flex;
