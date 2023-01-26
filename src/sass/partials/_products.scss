@@ -1,3 +1,39 @@
 .products {
-  color: black;
+  background-color: #e5e5e5;
+  &__ice-cream-wrapper {
+    display: flex;
+  }
+
+  &__composition {
+    color: $pinkBackground2;
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-family: Titan one;
+    line-height: 1.145;
+    text-align: center;
+  }
+  &__header-products {
+    color: #d41443;
+    font-size: 34px;
+    font-family: Titan one;
+    text-align: center;
+    line-height: 1.145;
+    letter-spacing: 0.04em;
+  }
+  &__ice-cream-products {
+    width: 280px;
+    height: 458px;
+    background-color: #c2e297;
+    list-style: none;
+    border-radius: 24px;
+    justify-content: center;
+  }
+  &__tekst {
+    font-family: Titan one;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 1.15px;
+    text-align: center;
+    letter-spacing: 0.04em;
+  }
 }
