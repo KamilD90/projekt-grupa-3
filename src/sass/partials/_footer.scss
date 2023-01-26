@@ -1,0 +1,18 @@
+.footer {
+  background: $footerBackground;
+
+  &__titles {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+  }
+  &__small-title {
+    color: $pinkBackground2;
+    font-family: 'Titan One';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.16;
+    max-width: 232px;
+    text-transform: uppercase;
+  }
+}
