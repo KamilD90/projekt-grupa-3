@@ -1,0 +1,45 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 10px;
+
+  &__bg {
+    background-color: $howItsMadeBackground;
+  }
+
+  &__container {
+    width: 100%;
+    background-color: $defaultBackground;
+    border-radius: 24px;
+  }
+
+  &__box {
+    background-color: $coffeeBackground;
+    color: $defaultBackground;
+    border-radius: 4px;
+    border-style: solid;
+    border: none;
+    padding: 2px 20px;
+    text-align: center;
+    width: fit-content;
+  }
+
+  &__contact {
+    list-style-type: none;
+    text-decoration: none;
+    color: $lightTextColor;
+  }
+
+  &__titles {
+    color: $defaultTextColor;
+    padding: 10px 10px;
+    text-align: left;
+  }
+
+  &__time-open {
+    color: $pinkBackground2;
+    padding: 10px 10px;
+    text-align: left;
+  }
+}
