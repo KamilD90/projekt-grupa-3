@@ -1,0 +1,57 @@
+.header {
+  background-color: $pinkBackground1;
+  position: relative;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 6px;
+    position: relative;
+    z-index: 250;
+  }
+
+  &__hamburger-container {
+    border: solid 1px black;
+    width: 20px;
+    height: 12px;
+  }
+  &__title-wrapper {
+    padding-top: 137px;
+    position: relative;
+    z-index: 250;
+  }
+  &__title {
+    max-width: 218px;
+    font-family: 'Titan One';
+    font-weight: 400;
+    font-size: 26px;
+    text-transform: uppercase;
+    color: $defaultBackground;
+
+    &--passion {
+      font-size: 48px;
+      color: $headTextColor;
+    }
+  }
+  &__buttons {
+    padding-top: 19px;
+    display: flex;
+    gap: 8px;
+  }
+  &__circle {
+    width: 346px;
+    height: 344px;
+    background-color: $pinkBackground2;
+    border-radius: 50%;
+    position: absolute;
+    top: 83px;
+    left: 36px;
+  }
+  &__ice-photo {
+    position: absolute;
+    top: 92px;
+    left: 117px;
+    background-color: none;
+    z-index: 200;
+  }
+}
