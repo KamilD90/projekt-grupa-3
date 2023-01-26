@@ -1,17 +1,20 @@
 .products {
+  color: black;
   background-color: #e5e5e5;
   &__ice-cream-wrapper {
     display: flex;
+    flex-direction: column;
   }
 
   &__composition {
-    color: $pinkBackground2;
+    color: #ffb8ca;
     font-size: 18px;
     margin-bottom: 15px;
     font-family: Titan one;
     line-height: 1.145;
     text-align: center;
   }
+
   &__header-products {
     color: #d41443;
     font-size: 34px;
@@ -23,11 +26,12 @@
   &__ice-cream-products {
     width: 280px;
     height: 458px;
-    background-color: #c2e297;
+    background-color: #ffb8ca;
     list-style: none;
     border-radius: 24px;
     justify-content: center;
   }
+
   &__tekst {
     font-family: Titan one;
     color: #ffffff;
@@ -35,5 +39,45 @@
     line-height: 1.15px;
     text-align: center;
     letter-spacing: 0.04em;
+  }
+  &__circle-dot {
+    width: 6px;
+    height: 6px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 30px;
+  }
+  &__tekst-wrapper {
+    gap: 30px;
+    justify-content: center;
+  }
+  &__products-lorem {
+    display: flex;
+    text-align: center;
+  }
+
+  &__button--products {
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__circle-box {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+  }
+  &__products-lorem {
+    display: flex;
+    font-family: DM Sans;
+    font-size: 14px;
+    line-height: 1.5;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: #ffffff;
   }
 }
