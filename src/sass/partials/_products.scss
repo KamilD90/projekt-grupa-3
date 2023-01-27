@@ -31,6 +31,23 @@
     border-radius: 24px;
     justify-content: center;
   }
+  &__ice-cream-products--coffee {
+    background-color: #f0d1a5;
+    width: 280px;
+    height: 458px;
+    list-style: none;
+    border-radius: 24px;
+    justify-content: center;
+  }
+  &__ice-cream-products--milkshakes {
+    background-color: #c2e297;
+    width: 280px;
+    height: 458px;
+
+    list-style: none;
+    border-radius: 24px;
+    justify-content: center;
+  }
 
   &__tekst {
     font-family: Titan one;
@@ -59,7 +76,8 @@
 
   &__button--products {
     border-radius: 50%;
-    background-color: white;
+    background-color: $defaultBackground;
+
     border: none;
     width: 40px;
     height: 40px;
