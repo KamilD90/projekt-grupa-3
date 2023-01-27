@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
-  padding-top: 10px;
+
   margin: 0 30px;
   &__bg {
     background-color: $howItsMadeBackground;
@@ -122,5 +122,35 @@
     margin: 25px 20px 43px 20px;
     border-top: 1px solid $quoteIconColor;
     padding-top: 25px;
+  }
+
+  &__btn {
+    width: 161px;
+    color: $defaultBackground;
+    background-color: $headTextColor;
+  }
+  &__btn:hover {
+    color: $headTextColor;
+    background-color: $defaultBackground;
+  }
+
+  &__btn--second {
+    width: 161px;
+    color: $headTextColor;
+    background-color: $defaultBackground;
+  }
+
+  &__btn--second:hover {
+    color: $defaultBackground;
+    background-color: $headTextColor;
+  }
+
+  &__btn-container {
+    margin-top: 54px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
   }
 }
