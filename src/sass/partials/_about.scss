@@ -1,6 +1,7 @@
 .about {
   background-color: $howItsMadeBackground;
   padding-top: 125px;
+  position: relative;
 
   &__section {
     font-family: Titan One;
@@ -49,6 +50,12 @@
     padding-top: 10px;
     display: block;
   }
+
+  &__background {
+    position: absolute;
+    width: 100%;
+    bottom: 61px;
+  }
 }
 
 .btn {
@@ -63,6 +70,6 @@
   padding-left: 37px;
 
   &__icon {
-    fill: $headTextColor;
+    margin-top: 2px;
   }
 }
