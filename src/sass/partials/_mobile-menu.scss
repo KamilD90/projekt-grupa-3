@@ -1,8 +1,16 @@
-.menu-container {
-  display: none;
+.mobile-menu {
+  position: fixed;
   width: 250px;
   padding: 23.26px 20px 171px 21px;
   background-color: $mobileMenuBackground;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: transform 250ms ease, opacity 250ms ease;
+
+  &.is-open {
+    transform: translateX(0);
+    opacity: 1;
+  }
 
   &__close-button {
     width: 14px;
@@ -39,7 +47,7 @@
   }
 }
 .button__icon {
-  top: 19px;
+  top: 42px;
   right: 48px;
   position: absolute;
   width: 7px;
