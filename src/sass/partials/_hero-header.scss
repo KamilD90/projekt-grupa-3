@@ -1,6 +1,8 @@
 .header {
   background-color: $pinkBackground1;
   position: relative;
+  height: 502px;
+  overflow: hidden;
 
   &__wrapper {
     display: flex;
@@ -14,6 +16,9 @@
     border: solid 1px black;
     width: 20px;
     height: 12px;
+  }
+  &__hamburger {
+    fill: $defaultTextColor;
   }
   &__title-wrapper {
     padding-top: 137px;
@@ -46,12 +51,13 @@
     position: absolute;
     top: 83px;
     left: 36px;
+    overflow: hidden;
   }
-  &__ice-photo {
+
+  &__ice {
     position: absolute;
+    z-index: 20;
     top: 92px;
     left: 117px;
-    background-color: none;
-    z-index: 200;
   }
 }
