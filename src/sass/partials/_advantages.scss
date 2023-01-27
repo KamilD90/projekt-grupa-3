@@ -1,0 +1,28 @@
+.advantages {
+  display: flex;
+  flex-direction: column;
+  background-color: $howItsMadeBackground;
+
+  &__title {
+    display: none;
+  }
+
+  &__item {
+    color: $headTextColor;
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 41px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 170%;
+  }
+}
