@@ -1,0 +1,48 @@
+.menu-container {
+  display: none;
+  width: 250px;
+  padding: 23.26px 20px 171px 21px;
+  background-color: $mobileMenuBackground;
+
+  &__close-button {
+    width: 14px;
+    height: 14px;
+
+    &-field {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+  &__navigation {
+    margin-top: 19px;
+
+    &-item {
+      height: 42px;
+      display: flex;
+      align-items: center;
+      border-top: 1px solid $mobileNavigationBorder;
+    }
+    &-link {
+      font-family: 'DM Sans';
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.29;
+      color: $defaultBackground;
+
+      &--highlight {
+        color: $headTextColor;
+      }
+    }
+  }
+  &__button-field {
+    position: relative;
+  }
+}
+.button__icon {
+  top: 19px;
+  right: 48px;
+  position: absolute;
+  width: 7px;
+  height: 10px;
+  fill: $headTextColor;
+}
