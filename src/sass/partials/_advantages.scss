@@ -1,10 +1,15 @@
 .advantages {
-  display: flex;
-  flex-direction: column;
   background-color: $howItsMadeBackground;
 
   &__title {
     display: none;
+  }
+
+  &__card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 38px;
+   
   }
 
   &__item {
@@ -16,6 +21,7 @@
     line-height: 41px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
+    margin-bottom: 20px;
   }
 
   &__description {
