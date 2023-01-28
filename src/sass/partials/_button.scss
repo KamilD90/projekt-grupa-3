@@ -14,4 +14,18 @@
     background-color: $defaultBackground;
     color: $headTextColor;
   }
+  &--mobile-menu {
+    margin-top: 23.26px;
+    width: 100%;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.3125;
+    color: $headTextColor;
+    background-color: $defaultBackground;
+    @include tablet {
+      margin-left: 10px;
+    }
+  }
 }

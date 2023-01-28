@@ -1,0 +1,74 @@
+.mobile-menu {
+  position: fixed;
+  inset: 0;
+  width: 250px;
+  height: 502px;
+  padding: 23.26px 20px 171px 21px;
+  background-color: $mobileMenuBackground;
+  transform: translateX(140%);
+  opacity: 0;
+  z-index: 1000;
+  transition: transform 250ms ease, opacity 250ms ease;
+  @include tablet {
+    padding: 23.26px 34px 689px 24px;
+    width: 254px;
+    height: 1020px;
+  }
+  @include desktop {
+    display: none;
+  }
+
+  &.is-open {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  &__close-button {
+    width: 14px;
+    height: 14px;
+    fill: $defaultBackground;
+
+    &-field {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+  &__navigation {
+    margin-top: 19px;
+
+    &-item {
+      height: 42px;
+      display: flex;
+      align-items: center;
+      border-top: 1px solid $mobileNavigationBorder;
+      &:last-child {
+        border-bottom: 1px solid $mobileNavigationBorder;
+      }
+    }
+    &-link {
+      font-family: 'DM Sans';
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.29;
+      color: $defaultBackground;
+
+      &--highlight {
+        color: $headTextColor;
+      }
+    }
+  }
+  &__button-field {
+    position: relative;
+  }
+}
+.button__icon {
+  position: absolute;
+  top: 42px;
+  right: 48px;
+  width: 7px;
+  height: 10px;
+  fill: $headTextColor;
+  @include tablet {
+    right: 25px;
+  }
+}
