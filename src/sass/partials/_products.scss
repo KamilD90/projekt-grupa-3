@@ -1,0 +1,138 @@
+.products {
+  color: black;
+  background-color: #e5e5e5;
+
+  &__ice-cream-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__composition {
+    color: #ffb8ca;
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-family: Titan one;
+    line-height: 1.145;
+    text-align: center;
+    margin-top: 121px;
+  }
+
+  &__header-products {
+    color: #d41443;
+    font-size: 34px;
+    font-family: Titan one;
+    text-align: center;
+    line-height: 1.145;
+    letter-spacing: 0.04em;
+  }
+
+  &__ice-cream-wrapper {
+    z-index: 1000000;
+    position: relative;
+    height: fit-content;
+    padding-bottom: 144px;
+  }
+
+  &__dessert-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-bottom: 96px;
+  }
+
+  &__ice-cream-products {
+    background-color: #ffb8ca;
+    list-style: none;
+    border-radius: 24px;
+
+    position: relative;
+  }
+
+  &__ice-cream-products--coffee {
+    background-color: #f0d1a5;
+    list-style: none;
+    border-radius: 24px;
+    justify-content: center;
+    margin-top: 130px;
+  }
+
+  &__ice-cream-products--milkshakes {
+    background-color: #c2e297;
+    gap: 16px;
+    list-style: none;
+    border-radius: 24px;
+    justify-content: center;
+    margin-top: 130px;
+  }
+
+  &__tekst {
+    font-family: Titan one;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.04em;
+    margin-top: 22px;
+  }
+
+  &__tekst-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  &__tekst-wrapper-item {
+    margin-top: 161px;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__products-lorem {
+    display: flex;
+    text-align: center;
+  }
+
+  &__circle-box {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+  }
+  &__circle::after {
+    content: '';
+    display: flex;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #ffffff;
+  }
+
+  &__products-lorem {
+    display: flex;
+    font-family: DM Sans;
+    font-size: 14px;
+    line-height: 1.5;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+  }
+  &__arrow {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__ice-cream-item {
+    position: relative;
+    z-index: 1;
+  }
+  &__img {
+    position: absolute;
+    width: 249px;
+    height: 252px;
+    top: -113px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  &__img-arrow {
+    margin-bottom: 30px;
+    width: 40px;
+    height: 40px;
+  }
+}
