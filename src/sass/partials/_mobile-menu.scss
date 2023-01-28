@@ -2,12 +2,21 @@
   position: fixed;
   inset: 0;
   width: 250px;
+  height: 502px;
   padding: 23.26px 20px 171px 21px;
   background-color: $mobileMenuBackground;
   transform: translateX(140%);
   opacity: 0;
   z-index: 1000;
   transition: transform 250ms ease, opacity 250ms ease;
+  @include tablet {
+    padding: 23.26px 34px 689px 24px;
+    width: 254px;
+  }
+  @include desktop {
+    display: none;
+    height: 1020px;
+  }
 
   &.is-open {
     transform: translateX(0);
@@ -32,6 +41,9 @@
       display: flex;
       align-items: center;
       border-top: 1px solid $mobileNavigationBorder;
+      &:last-child {
+        border-bottom: 1px solid $mobileNavigationBorder;
+      }
     }
     &-link {
       font-family: 'DM Sans';
@@ -50,10 +62,13 @@
   }
 }
 .button__icon {
+  position: absolute;
   top: 42px;
   right: 48px;
-  position: absolute;
   width: 7px;
   height: 10px;
   fill: $headTextColor;
+  @include tablet {
+    right: 25px;
+  }
 }

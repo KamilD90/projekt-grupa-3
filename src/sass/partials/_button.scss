@@ -24,5 +24,8 @@
     line-height: 1.3125;
     color: $headTextColor;
     background-color: $defaultBackground;
+    @include tablet {
+      margin-left: 10px;
+    }
   }
 }
