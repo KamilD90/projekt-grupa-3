@@ -9,7 +9,11 @@
     display: flex;
     flex-wrap: wrap;
     gap: 38px;
-   
+    list-style: none;
+  }
+
+  &__img {
+    margin-top: 38px;
   }
 
   &__item {
@@ -21,6 +25,7 @@
     line-height: 41px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
+    margin-top: 16px;
     margin-bottom: 20px;
   }
 
@@ -29,6 +34,7 @@
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
-    line-height: 170%;
+    line-height: 1.66;
+    width: 100%;
   }
 }
