@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   gap: 30px;
+  margin-top: -84px;
 
   @include tablet {
     display: flex;
@@ -14,6 +15,10 @@
     display: flex;
     flex-direction: row;
     gap: 30px;
+  }
+
+  &__name {
+    display: none;
   }
 
   &__bg {
@@ -31,8 +36,11 @@
       padding-left: 11px;
       padding-right: 11px;
     }
+
     @include desktop {
       max-width: 330px;
+      padding-left: 21px;
+      padding-right: 21px;
     }
   }
 
@@ -58,6 +66,7 @@
       font-size: 16px;
     }
   }
+
   &__box--color {
     color: $defaultBackground;
     border-radius: 4px;
@@ -91,8 +100,13 @@
     line-height: 1.5;
     letter-spacing: 0em;
     text-align: left;
+
     @include tablet {
       font-size: 14px;
+    }
+
+    @include desktop {
+      font-size: 16px;
     }
   }
 
@@ -107,9 +121,14 @@
     line-height: 1.83;
     letter-spacing: 0em;
     text-align: left;
+
     @include tablet {
       padding-top: 15px;
       font-size: 14px;
+    }
+
+    @include desktop {
+      font-size: 16px;
     }
   }
 
@@ -126,10 +145,15 @@
     line-height: 1.83;
     letter-spacing: 0.04em;
     text-align: left;
+
     @include tablet {
       padding-top: 30px;
       padding-bottom: 14px;
       font-size: 14px;
+    }
+
+    @include desktop {
+      font-size: 16px;
     }
   }
 
@@ -143,8 +167,13 @@
     line-height: 1.83;
     letter-spacing: 0em;
     text-align: left;
+
     @include tablet {
       font-size: 14px;
+    }
+
+    @include desktop {
+      font-size: 16px;
     }
   }
 
@@ -160,11 +189,16 @@
     line-height: 18px;
     letter-spacing: 0em;
     text-align: left;
+
     @include tablet {
       padding-right: 12px;
       margin-bottom: 18px;
       padding-bottom: 30px;
       font-size: 14px;
+    }
+
+    @include desktop {
+      font-size: 16px;
     }
   }
 
@@ -174,6 +208,7 @@
     margin: 25px 20px 43px 20px;
     border-top: 1px solid $quoteIconColor;
     padding-top: 25px;
+
     @include tablet {
       padding-top: 30px;
       margin-top: 30px;
@@ -185,10 +220,16 @@
     width: 161px;
     color: $defaultBackground;
     background-color: $headTextColor;
+    
     @include tablet {
       width: 174px;
     }
+
+    @include desktop {
+      width: 198px;
+    }
   }
+
   &__btn:hover {
     color: $headTextColor;
     background-color: $defaultBackground;
@@ -198,8 +239,13 @@
     width: 161px;
     color: $headTextColor;
     background-color: $defaultBackground;
+    
     @include tablet {
       width: 174px;
+    }
+
+    @include desktop {
+      width: 198px;
     }
   }
 
@@ -215,11 +261,16 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
+    
     @include tablet {
       display: flex;
       flex-direction: row;
       gap: 15px;
       margin-top: 81px;
+    }
+    
+    @include desktop {
+      margin-top: 86px;
     }
   }
 }
