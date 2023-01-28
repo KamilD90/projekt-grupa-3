@@ -12,10 +12,10 @@
   @include tablet {
     padding: 23.26px 34px 689px 24px;
     width: 254px;
+    height: 1020px;
   }
   @include desktop {
     display: none;
-    height: 1020px;
   }
 
   &.is-open {
