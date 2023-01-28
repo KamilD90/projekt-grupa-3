@@ -1,0 +1,9 @@
+.gallery {
+  width: 100vw;
+  height: auto;
+
+  &__picture {
+    display: block;
+    margin: 0 auto;
+  }
+}
