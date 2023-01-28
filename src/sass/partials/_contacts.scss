@@ -4,7 +4,6 @@
   align-items: center;
   justify-content: center;
   gap: 30px;
-  margin-top: -84px;
 
   @include tablet {
     display: flex;
@@ -24,10 +23,22 @@
   &__bg {
     background-color: $howItsMadeBackground;
   }
+  &__img {
+    display: none;
+    @include tablet {
+      display: none;
+    }
+    @include desktop {
+      display: block;
+      position: absolute;
+      margin: auto 0;
+    }
+  }
 
   &__container {
     max-width: 220px;
-
+    position: relative;
+    top: -84px;
     background-color: $defaultBackground;
     border-radius: 24px;
     box-shadow: 0px 8px 30px 0px #d414431a;
@@ -220,7 +231,8 @@
     width: 161px;
     color: $defaultBackground;
     background-color: $headTextColor;
-    
+
+    top: -84px;
     @include tablet {
       width: 174px;
     }
@@ -239,7 +251,7 @@
     width: 161px;
     color: $headTextColor;
     background-color: $defaultBackground;
-    
+
     @include tablet {
       width: 174px;
     }
@@ -261,14 +273,16 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    
+    position: relative;
+    top: -84px;
+
     @include tablet {
       display: flex;
       flex-direction: row;
       gap: 15px;
       margin-top: 81px;
     }
-    
+
     @include desktop {
       margin-top: 86px;
     }
