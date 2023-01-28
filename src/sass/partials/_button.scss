@@ -9,10 +9,30 @@
   &--products {
     background-color: $headTextColor;
     color: $defaultBackground;
+    &:hover {
+      background-color: $button1Headerhover;
+    }
   }
   &--made {
     background-color: $defaultBackground;
     color: $headTextColor;
+    &:hover {
+      background-color: $button2Headerhover;
+      color: $headTextColor;
+    }
+  }
+  &--header {
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    background-color: $defaultBackground;
+    color: $headTextColor;
+    fill: $headTextColor;
+    &:hover {
+      background-color: $button2Headerhover;
+      color: $headTextColor;
+    }
   }
   &--mobile-menu {
     margin-top: 23.26px;

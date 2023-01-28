@@ -1,29 +1,45 @@
-.header {
+header {
   background-color: $pinkBackground1;
+}
+.header {
   position: relative;
   height: 502px;
   overflow: hidden;
-
+  @media (min-width: 768px) {
+    height: 399px;
+  }
   &__wrapper {
     display: flex;
     justify-content: space-between;
     padding-top: 6px;
     position: relative;
     z-index: 250;
+    align-items: center;
+    @media (min-width: 768px) {
+      padding-top: 37px;
+    }
   }
 
   &__hamburger-container {
     border: solid 1px black;
-    width: 20px;
-    height: 12px;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    @media (min-width: 768px) {
+      gap: 30px;
+    }
   }
   &__hamburger {
-    fill: $defaultTextColor;
+    fill: $headTextColor;
   }
   &__title-wrapper {
     padding-top: 137px;
     position: relative;
     z-index: 250;
+    @media (min-width: 768px) {
+      padding-top: 15px;
+    }
   }
   &__title {
     max-width: 218px;
@@ -32,16 +48,25 @@
     font-size: 26px;
     text-transform: uppercase;
     color: $defaultBackground;
+    @media (min-width: 768px) {
+      font-size: 22px;
+    }
 
     &--passion {
       font-size: 48px;
       color: $headTextColor;
+      @media (min-width: 768px) {
+        font-size: 34px;
+      }
     }
   }
   &__buttons {
     padding-top: 19px;
     display: flex;
     gap: 8px;
+    font-family: 'DM Sans';
+    font-size: 8px;
+    font-weight: 400;
   }
   &__circle {
     width: 346px;
@@ -52,12 +77,60 @@
     top: 83px;
     left: 36px;
     overflow: hidden;
+
+    @media (min-width: 768px) {
+      width: 324px;
+      height: 322px;
+      left: 307px;
+      top: 31px;
+    }
   }
 
   &__ice {
     position: absolute;
+
     z-index: 20;
     top: 92px;
     left: 117px;
+    @media (min-width: 768px) {
+      left: 378px;
+    }
+  }
+  &__buy {
+    display: none;
+    @media (min-width: 768px) {
+      display: block;
+    }
+  }
+  &__pictures {
+    display: flex;
+    gap: 298px;
+    position: absolute;
+    top: 429px;
+  }
+  &__milk-container {
+    display: flex;
+    width: fit-content;
+    position: absolute;
+    top: 245px;
+  }
+  &__figcaption {
+    width: 114px;
+    font-family: 'DM Sans';
+    font-weight: 400;
+    font-size: 8px;
+    color: $defaultBackground;
+  }
+  &__tasty {
+    position: absolute;
+    left: 566px;
+    top: 266px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
   }
 }
