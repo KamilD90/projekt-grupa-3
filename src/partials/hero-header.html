@@ -3,12 +3,19 @@
     <div class="header__circle"></div>
     <div class="header__wrapper">
       <div class="header__nav">
-        <img src="./images/logo.png" alt="logo" />
+        <img src="./images/header/logo.png" alt="logo" />
       </div>
       <div class="header__hamburger-container">
         <svg class="header__hamburger" width="20" height="12">
-          <use href="./images/icons/icons-project.svg#icon-burger-menu"></use>
+          <use href="./images/icons/icons-project.svg#icon-home"></use>
         </svg>
+        <div class="header__buy">
+          <button class="button button--header">
+            Buy now<svg class="header__arrow" width="10" height="20">
+              <use href="./images/icons/icons-project.svg#icon-buy-menu-arrow"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
     <div class="header__title-wrapper">
@@ -17,9 +24,36 @@
       </h1>
       <div class="header__buttons">
         <a href="#"><button class="button button--products">Products</button></a>
-        <a href="#"><button class="button button-made">How it's made</button></a>
+        <a href="#"><button class="button button--made">How it's made?</button></a>
       </div>
     </div>
-    <img class="header__ice" alt="ice-cream" src="./images/header-ice-cream.png" />
+
+    <img
+      class="header__ice"
+      alt="ice-cream"
+      src="./images/header/header-ice-cream.png"
+      srcset="
+        ./images/header/header-ice-cream.png    171w,
+        ./images/header/header-ice-cream@2.png  342w,
+        ./images/header/header-ice-creamt.png   143w,
+        ./images/header/header-ice-creamt@2.png 286w,
+        ./images/header/header-ice-creamd.png   236w,
+        ./images/header/header-ice-creamd@2.png 472w
+      "
+      sizes="(min-width: 1200px) 236px, (min-width: 768px) 143px, (min-width: 320px) 171px, 100vw"
+    />
+
+    <form class="header__milk-container">
+      <img class="header__milk" alt="pot of milk" src="./images/header/header-milk.png" />
+      <figcaption class="header__figcaption">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et
+      </figcaption>
+    </form>
+    <img
+      class="header__tasty"
+      alt="women eating ice cream"
+      src="./images/header/header-tasty.png"
+    />
   </div>
 </header>
