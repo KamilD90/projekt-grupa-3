@@ -4,3 +4,11 @@
 <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden"><defs><symbol id="icon-mobile-menu-close" viewBox="0 0 32 32"><path stroke-width="2" d="m2.519 2 26.963 28M2 29.481 30 2.518"/></symbol></defs></svg>
 
 <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden"><defs><symbol id="icon-buy-now-arrow" viewBox="0 0 26 32"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="6.4" d="M3.542 3.2 20.367 16 3.542 28.8"/></symbol></defs></svg>
+
+<svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+<defs>
+<symbol id="icon-burger-menu" viewBox="0 0 43 32">
+<path stroke-width="2.133" d="M-.08.853h43.467M-.298 16.295h43.467M-.662 30.82h43.467"/>
+</symbol>
+</defs>
+</svg>
