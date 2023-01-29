@@ -1,6 +1,6 @@
 .products {
   color: black;
-  background-color: #e5e5e5;
+  background-color: #ffffff;
 
   &__ice-cream-wrapper {
     display: flex;
@@ -19,6 +19,7 @@
     @include tablet {
       font-size: 26px;
       line-height: 1.153;
+      margin-top: 122px;
     }
   }
 
@@ -29,26 +30,29 @@
     text-align: center;
     line-height: 1.145;
     letter-spacing: 0.04em;
+    margin-bottom: 31px;
     @include tablet {
       font-size: 48px;
       line-height: 1.145;
+      margin-bottom: 39px;
     }
   }
   &__dessert-wrapper {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    padding-bottom: 96px;
+    padding-bottom: 98px;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center;
+    align-items: center;
     @include tablet {
       flex-direction: row;
+      gap: 20px;
+      padding-left: 34px;
+      padding-right: 34px;
+      padding-bottom: 112px;
     }
-  }
-
-  &__ice-cream-wrapper {
-    z-index: 1000000;
-    position: relative;
-    height: fit-content;
-    padding-bottom: 144px;
   }
 
   &__ice-cream-products {
@@ -57,6 +61,7 @@
     border-radius: 24px;
     margin-top: 130px;
     position: relative;
+    max-width: 280px;
     @include tablet {
     }
   }
@@ -77,6 +82,7 @@
     border-radius: 24px;
     justify-content: center;
     margin-top: 130px;
+    max-width: 280px;
   }
 
   &__ice-cream-products--milkshakes {
@@ -86,6 +92,7 @@
     border-radius: 24px;
     justify-content: center;
     margin-top: 130px;
+    max-width: 280px;
   }
 
   &__tekst-wrapper {
@@ -97,10 +104,19 @@
     gap: 30px;
     display: flex;
     flex-direction: column;
+    @include tablet {
+      margin-top: 152px;
+    }
   }
   &__products-lorem {
     display: flex;
     text-align: center;
+    padding-right: 39px;
+    padding-left: 41px;
+    @include tablet {
+      padding-right: 11px;
+      padding-left: 11px;
+    }
   }
 
   &__circle-box {
@@ -126,7 +142,23 @@
     letter-spacing: 0.04em;
     color: #ffffff;
     @include tablet {
+      display: none;
       line-height: 1.785;
+    }
+  }
+  &__lorem-overflor {
+    display: none;
+    @include tablet {
+      display: block;
+      display: flex;
+      font-family: DM Sans;
+      font-size: 14px;
+      line-height: 1.5;
+      align-items: center;
+      letter-spacing: 0.04em;
+      color: #ffffff;
+      justify-content: center;
+      text-align: center;
     }
   }
   &__arrow {
@@ -147,8 +179,11 @@
     transform: translate(-50%, 0);
   }
   &__img-arrow {
-    margin-bottom: 30px;
+    margin-bottom: 41px;
     width: 40px;
     height: 40px;
+    @include tablet {
+      margin-bottom: 40px;
+    }
   }
 }
