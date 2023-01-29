@@ -7,8 +7,11 @@
 
 <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
 <defs>
-<symbol id="icon-burger-menu" viewBox="0 0 43 32">
-<path stroke-width="2.133" d="M-.08.853h43.467M-.298 16.295h43.467M-.662 30.82h43.467"/>
+
+<symbol id="icon-burger-menu" viewBox="0 0 46 32">
+<path d="M0 1.143h45.714v2.286h-45.714v-2.286z"></path>
+<path d="M0 14.857h45.714v2.286h-45.714v-2.286z"></path>
+<path d="M0 28.571h45.714v2.286h-45.714v-2.286z"></path>
 </symbol>
 </defs>
 </svg>
