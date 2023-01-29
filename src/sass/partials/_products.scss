@@ -15,6 +15,11 @@
     line-height: 1.145;
     text-align: center;
     margin-top: 121px;
+    font-weight: 400;
+    @include tablet {
+      font-size: 26px;
+      line-height: 1.153;
+    }
   }
 
   &__header-products {
@@ -24,6 +29,19 @@
     text-align: center;
     line-height: 1.145;
     letter-spacing: 0.04em;
+    @include tablet {
+      font-size: 48px;
+      line-height: 1.145;
+    }
+  }
+  &__dessert-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-bottom: 96px;
+    @include tablet {
+      flex-direction: row;
+    }
   }
 
   &__ice-cream-wrapper {
@@ -33,19 +51,24 @@
     padding-bottom: 144px;
   }
 
-  &__dessert-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    padding-bottom: 96px;
-  }
-
   &__ice-cream-products {
     background-color: #ffb8ca;
     list-style: none;
     border-radius: 24px;
-
+    margin-top: 130px;
     position: relative;
+    @include tablet {
+    }
+  }
+
+  &__dessert-description {
+    font-family: Titan one;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.04em;
+    margin-top: 22px;
   }
 
   &__ice-cream-products--coffee {
@@ -63,16 +86,6 @@
     border-radius: 24px;
     justify-content: center;
     margin-top: 130px;
-  }
-
-  &__tekst {
-    font-family: Titan one;
-    color: #ffffff;
-    font-size: 20px;
-    line-height: 1.15;
-    text-align: center;
-    letter-spacing: 0.04em;
-    margin-top: 22px;
   }
 
   &__tekst-wrapper {
@@ -112,6 +125,9 @@
     align-items: center;
     letter-spacing: 0.04em;
     color: #ffffff;
+    @include tablet {
+      line-height: 1.785;
+    }
   }
   &__arrow {
     display: flex;
