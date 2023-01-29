@@ -1,9 +1,77 @@
 .gallery {
-  width: 100vw;
-  height: auto;
+  margin: 0 auto;
+  max-width: 480px;
+  min-height: 35vw;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('../images/images-mobile/gallery-mob@1x.jpg'),
+    linear-gradient(
+      to bottom,
+      $howItsMadeBackground,
+      $howItsMadeBackground 50%,
+      $defaultBackground 50%,
+      $defaultBackground 100%
+    );
 
-  &__picture {
-    display: block;
-    margin: 0 auto;
+  @include tablet {
+    max-width: 768px;
+    background-image: url('../images/images-tablet/gallery-tab@1x.jpg'),
+      linear-gradient(
+        to bottom,
+        $howItsMadeBackground,
+        $howItsMadeBackground 50%,
+        $defaultBackground 50%,
+        $defaultBackground 100%
+      );
+  }
+
+  @include desktop {
+    max-width: 1280px;
+    background-image: url('../images/images-desktop/gallery-desk@1x.jpg')
+      linear-gradient(
+        to bottom,
+        $howItsMadeBackground,
+        $howItsMadeBackground 50%,
+        $defaultBackground 50%,
+        $defaultBackground 100%
+      );
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .gallery {
+    background-image: url('../images/images-mobile/gallery-mob@2x.jpg'),
+      linear-gradient(
+        to bottom,
+        $howItsMadeBackground,
+        $howItsMadeBackground 50%,
+        $defaultBackground 50%,
+        $defaultBackground 100%
+      );
+
+    @include tablet {
+      background-image: url('../images/images-tablet/gallery-tab@2x.jpg'),
+        linear-gradient(
+          to bottom,
+          $howItsMadeBackground,
+          $howItsMadeBackground 50%,
+          $defaultBackground 50%,
+          $defaultBackground 100%
+        );
+    }
+
+    @include desktop {
+      background-image: url('../images/images-desktop/gallery-desk@2x.jpg')
+        linear-gradient(
+          to bottom,
+          $howItsMadeBackground,
+          $howItsMadeBackground 50%,
+          $defaultBackground 50%,
+          $defaultBackground 100%
+        );
+    }
   }
 }
