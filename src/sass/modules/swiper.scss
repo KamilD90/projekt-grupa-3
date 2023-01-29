@@ -37,16 +37,28 @@
   z-index: 1;
 
   &__photo {
-    margin-bottom: 29px;
     width: 85px;
     height: 85px;
+    margin-bottom: 29px;
+    @include tablet {
+      margin-bottom: 19px;
+    }
+    @include desktop {
+      margin-bottom: 15px;
+    }
   }
 
   &__review-box {
-    height: 308px;
     background-color: $quoteBackground;
-    padding: 71px 50px 26px;
+    // padding: 71px 50px 26px;
+    padding: 43px 50px 20px;
     margin-bottom: 6px;
+    @include tablet {
+      padding: 47px 36px 28px 60px;
+    }
+    @include desktop {
+      padding: 47px 54px 32px 59px;
+    }
   }
 
   &__quote {
@@ -57,21 +69,36 @@
       $quoteIconColor 30px,
       $quoteIconColor 31px
     );
-
+    @include tablet {
+      background-image: repeating-linear-gradient(
+        to bottom,
+        $quoteBackground,
+        $quoteBackground 29px,
+        $quoteIconColor 29px,
+        $quoteIconColor 30px
+      );
+    }
     background-repeat: repeat;
     background-size: fill;
   }
 
   &__opinion {
     position: relative;
-    margin: -28px 16px 6px 7px;
-    margin-left: 7px;
-    margin-bottom: 6px;
-    margin-right: 16px;
+    margin: 0 16px 6px 7px;
     font-weight: 500;
     font-size: 12px;
     line-height: 31px;
     text-align: center;
+    @include tablet {
+      font-size: 14px;
+      line-height: 30px;
+      letter-spacing: 4%;
+      margin: 0 44px 6px 20px;
+    }
+    @include desktop {
+      font-size: 16px;
+      margin: 0 35px 7px 28px;
+    }
   }
 
   &__personal-info {
@@ -137,6 +164,14 @@
     position: absolute;
     top: 146px;
     left: 50px;
+    @include tablet {
+      top: 134px;
+      left: 40px;
+    }
+    @include desktop {
+      top: 132px;
+      left: 50px;
+    }
   }
 }
 .swiper-slide-invisible-blank {
