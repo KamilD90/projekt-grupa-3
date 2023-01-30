@@ -5,16 +5,16 @@ header {
   position: relative;
   height: 502px;
   overflow: hidden;
-  @media (min-width: 768px) {
+  @include tablet {
     height: 399px;
   }
-  @media (min-width: 1200px) {
+  @include desktop {
     height: 665px;
   }
   &__info {
     display: flex;
     justify-content: space-between;
-    @media (min-width: 1200px) {
+    @include desktop {
       padding-top: 74px;
     }
   }
@@ -25,13 +25,13 @@ header {
     position: relative;
     z-index: 250;
     align-items: center;
-    @media (min-width: 768px) {
+    @include tablet {
       padding-top: 37px;
     }
   }
   &__anchors {
     display: none;
-    @media (min-width: 1200px) {
+    @include desktop {
       display: flex;
     }
   }
@@ -42,7 +42,7 @@ header {
     font-weight: 700;
     font-size: 16px;
     color: $defaultBackground;
-    @media (min-width: 768px) {
+    @include tablet {
       display: flex;
     }
   }
@@ -58,21 +58,21 @@ header {
     height: fit-content;
     display: flex;
     align-items: center;
-    @media (min-width: 768px) {
+    @include tablet {
       gap: 30px;
     }
   }
   &__hamburger {
-    fill: $headTextColor;
-    @media (min-width: 1200px) {
+    stroke: $headTextColor;
+    @include desktop {
       display: none;
     }
   }
   &__title-wrapper {
     padding-top: 137px;
     position: relative;
-    z-index: 250;
-    @media (min-width: 768px) {
+    z-index: 249;
+    @include tablet {
       padding-top: 15px;
     }
   }
@@ -83,10 +83,10 @@ header {
     font-size: 26px;
     text-transform: uppercase;
     color: $defaultBackground;
-    @media (min-width: 768px) {
+    @include tablet {
       font-size: 22px;
     }
-    @media (min-width: 1200px) {
+    @include desktop {
       font-size: 38px;
       max-width: 277px;
     }
@@ -94,10 +94,10 @@ header {
     &--passion {
       font-size: 48px;
       color: $headTextColor;
-      @media (min-width: 768px) {
+      @include tablet {
         font-size: 34px;
       }
-      @media (min-width: 1200px) {
+      @include desktop {
         font-size: 58px;
       }
     }
@@ -109,10 +109,8 @@ header {
     font-family: 'DM Sans';
     font-size: 8px;
     font-weight: 400;
-    @media (min-width: 1200px) {
+    @include desktop {
       padding-top: 25px;
-    }
-    @media (min-width: 1200px) {
       font-size: 14px;
     }
   }
@@ -126,12 +124,12 @@ header {
     left: 36px;
     overflow: hidden;
 
-    @media (min-width: 768px) {
+    @include tablet {
       width: 324px;
       height: 322px;
       left: 307px;
       top: 31px;
-      @media (min-width: 1200px) {
+      @include desktop {
         width: 538px;
         height: 538px;
         left: 475px;
@@ -144,7 +142,7 @@ header {
         left: 35px;
         top: -2px;
         z-index: 10;
-        @media (min-width: 1200px) {
+        @include desktop {
           width: 30px;
           height: 30px;
           left: 60px;
@@ -160,17 +158,17 @@ header {
     z-index: 20;
     top: 92px;
     left: 117px;
-    @media (min-width: 768px) {
+    @include tablet {
       left: 378px;
     }
-    @media (min-width: 1200px) {
+    @include desktop {
       left: 594px;
       top: 108px;
     }
   }
   &__buy {
     display: none;
-    @media (min-width: 768px) {
+    @include tablet {
       display: block;
     }
   }
@@ -188,10 +186,10 @@ header {
     display: none;
     align-items: center;
 
-    @media (min-width: 768px) {
+    @include tablet {
       display: flex;
     }
-    @media (min-width: 1200px) {
+    @include desktop {
       top: 429px;
     }
   }
@@ -205,7 +203,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    @media (min-width: 1200px) {
+    @include desktop {
       font-size: 14px;
       width: 200px;
     }
@@ -214,7 +212,7 @@ header {
     position: absolute;
     left: 566px;
     top: 266px;
-    @media (min-width: 1200px) {
+    @include desktop {
       top: 433px;
       left: 878px;
     }
@@ -224,7 +222,7 @@ header {
     flex-direction: column;
     gap: 14px;
     position: relative;
-    @media (min-width: 768px) {
+    @include tablet {
       display: flex;
     }
   }
@@ -240,7 +238,7 @@ header {
     font-size: 28px;
     color: $headTextColor;
     z-index: 20;
-    @media (min-width: 1200px) {
+    @include desktop {
       font-size: 46px;
     }
   }
@@ -249,19 +247,19 @@ header {
     font-weight: 400;
     font-size: 8px;
     color: $defaultBackground;
-    @media (min-width: 1200px) {
+    @include desktop {
       font-size: 14px;
     }
   }
 }
 
-@media (min-width: 768px) {
+@include tablet {
   .container {
     max-width: 768px;
     padding: 0 32px;
   }
 
-  @media (min-width: 1200px) {
+  @include desktop {
     .container {
       max-width: 1200px;
       padding: 0 115px 0 48px;
