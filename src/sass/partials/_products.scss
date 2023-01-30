@@ -21,6 +21,11 @@
       line-height: 1.153;
       margin-top: 122px;
     }
+    @include desktop {
+      margin-top: 127px;
+      font-size: 30px;
+      line-height: 1.1333;
+    }
   }
 
   &__header-products {
