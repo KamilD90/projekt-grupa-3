@@ -1,6 +1,6 @@
 .products {
   color: black;
-  background-color: #e5e5e5;
+  background-color: #ffffff;
 
   &__ice-cream-wrapper {
     display: flex;
@@ -15,6 +15,12 @@
     line-height: 1.145;
     text-align: center;
     margin-top: 121px;
+    font-weight: 400;
+    @include tablet {
+      font-size: 26px;
+      line-height: 1.153;
+      margin-top: 122px;
+    }
   }
 
   &__header-products {
@@ -24,28 +30,50 @@
     text-align: center;
     line-height: 1.145;
     letter-spacing: 0.04em;
+    margin-bottom: 31px;
+    @include tablet {
+      font-size: 48px;
+      line-height: 1.145;
+      margin-bottom: 39px;
+    }
   }
-
-  &__ice-cream-wrapper {
-    z-index: 1000000;
-    position: relative;
-    height: fit-content;
-    padding-bottom: 144px;
-  }
-
   &__dessert-wrapper {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    padding-bottom: 96px;
+    padding-bottom: 98px;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center;
+    align-items: center;
+    @include tablet {
+      flex-direction: row;
+      gap: 20px;
+      padding-left: 34px;
+      padding-right: 34px;
+      padding-bottom: 112px;
+    }
   }
 
   &__ice-cream-products {
     background-color: #ffb8ca;
     list-style: none;
     border-radius: 24px;
-
+    margin-top: 130px;
     position: relative;
+    max-width: 280px;
+    @include tablet {
+    }
+  }
+
+  &__dessert-description {
+    font-family: Titan one;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.04em;
+    margin-top: 22px;
   }
 
   &__ice-cream-products--coffee {
@@ -54,6 +82,10 @@
     border-radius: 24px;
     justify-content: center;
     margin-top: 130px;
+    max-width: 280px;
+    @include tablet {
+      max-width: 220px;
+    }
   }
 
   &__ice-cream-products--milkshakes {
@@ -63,16 +95,10 @@
     border-radius: 24px;
     justify-content: center;
     margin-top: 130px;
-  }
-
-  &__tekst {
-    font-family: Titan one;
-    color: #ffffff;
-    font-size: 20px;
-    line-height: 1.15;
-    text-align: center;
-    letter-spacing: 0.04em;
-    margin-top: 22px;
+    max-width: 280px;
+    @include tablet {
+      max-width: 220px;
+    }
   }
 
   &__tekst-wrapper {
@@ -84,10 +110,21 @@
     gap: 30px;
     display: flex;
     flex-direction: column;
+    max-width: 280px;
+    @include tablet {
+      margin-top: 152px;
+      max-width: 220px;
+    }
   }
   &__products-lorem {
     display: flex;
     text-align: center;
+    padding-right: 39px;
+    padding-left: 41px;
+    @include tablet {
+      padding-right: 11px;
+      padding-left: 11px;
+    }
   }
 
   &__circle-box {
@@ -111,8 +148,18 @@
     line-height: 1.5;
     align-items: center;
     letter-spacing: 0.04em;
+
     color: #ffffff;
+    @include tablet {
+      display: -webkit-box;
+      -webkit-line-clamp: 5;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      padding: 0 11px;
+      vertical-align: top;
+    }
   }
+
   &__arrow {
     display: flex;
     justify-content: center;
@@ -131,8 +178,11 @@
     transform: translate(-50%, 0);
   }
   &__img-arrow {
-    margin-bottom: 30px;
+    margin-bottom: 41px;
     width: 40px;
     height: 40px;
+    @include tablet {
+      margin-bottom: 40px;
+    }
   }
 }
