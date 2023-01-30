@@ -5,7 +5,7 @@
   height: 502px;
   padding: 23.26px 20px 171px 21px;
   background-color: $mobileMenuBackground;
-  transform: translateX(140%);
+  transform: translateX(250%);
   opacity: 0;
   z-index: 1000;
   transition: transform 250ms ease, opacity 250ms ease;
@@ -26,7 +26,7 @@
   &__close-button {
     width: 14px;
     height: 14px;
-    fill: $defaultBackground;
+    stroke: $defaultBackground;
 
     &-field {
       display: flex;
