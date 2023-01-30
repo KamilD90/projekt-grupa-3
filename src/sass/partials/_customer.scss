@@ -1,0 +1,21 @@
+.customer {
+  &__title {
+    display: none;
+  }
+
+  & .container {
+    padding-top: 80px;
+    padding-bottom: 170px;
+
+    @include tablet{
+      padding-top: 120px;
+      padding-bottom: 197px;
+    }
+
+    @include desktop{
+      padding-top: 123px;
+      padding-bottom: 234px;
+    }
+
+  }
+}

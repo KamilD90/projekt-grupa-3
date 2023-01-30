@@ -1,15 +1,7 @@
 .advantages {
   background-color: $howItsMadeBackground;
-  margin: 0 auto;
-  padding: 0 20px;
-
-  @include tablet {
-    padding-left: 36px;
-  }
-
-  @include desktop {
-    padding-left: 115px;
-  }
+  // background-color: $howItsMadeBackground;
+  padding-bottom: 97px;
 
   &__title {
     display: none;
