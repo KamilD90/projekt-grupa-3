@@ -83,6 +83,9 @@
     justify-content: center;
     margin-top: 130px;
     max-width: 280px;
+    @include tablet {
+      max-width: 220px;
+    }
   }
 
   &__ice-cream-products--milkshakes {
@@ -93,6 +96,9 @@
     justify-content: center;
     margin-top: 130px;
     max-width: 280px;
+    @include tablet {
+      max-width: 220px;
+    }
   }
 
   &__tekst-wrapper {
@@ -104,8 +110,10 @@
     gap: 30px;
     display: flex;
     flex-direction: column;
+    max-width: 280px;
     @include tablet {
       margin-top: 152px;
+      max-width: 220px;
     }
   }
   &__products-lorem {
@@ -140,27 +148,18 @@
     line-height: 1.5;
     align-items: center;
     letter-spacing: 0.04em;
+
     color: #ffffff;
     @include tablet {
-      display: none;
-      line-height: 1.785;
+      display: -webkit-box;
+      -webkit-line-clamp: 5;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      padding: 0 11px;
+      vertical-align: top;
     }
   }
-  &__lorem-overflor {
-    display: none;
-    @include tablet {
-      display: block;
-      display: flex;
-      font-family: DM Sans;
-      font-size: 14px;
-      line-height: 1.5;
-      align-items: center;
-      letter-spacing: 0.04em;
-      color: #ffffff;
-      justify-content: center;
-      text-align: center;
-    }
-  }
+
   &__arrow {
     display: flex;
     justify-content: center;
