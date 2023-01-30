@@ -5,6 +5,17 @@
       <div class="header__nav">
         <img src="./images/header/logo.png" alt="logo" />
       </div>
+      <div class="header__anchors">
+        <ul class="header__anchor-list">
+          <li class="header__anchor-element"><a href="#">Home</a></li>
+          <li class="header__anchor-element"><a href="#">About us</a></li>
+          <li class="header__anchor-element">
+            <a href="#">How it's made?</a>
+          </li>
+          <li class="header__anchor-element"><a href="#">Our products</a></li>
+          <li class="header__anchor-element"><a href="#">Contacts</a></li>
+        </ul>
+      </div>
       <div class="header__hamburger-container">
         <svg class="header__hamburger" width="20" height="12">
           <use href="./images/icons/icons-project.svg#icon-burger-menu"></use>
@@ -55,14 +66,35 @@
     />
 
     <form class="header__milk-container">
-      <img class="header__milk" alt="pot of milk" src="./images/header/header-milk.png" />
+      <img
+        class="header__milk"
+        alt="pot of milk"
+        src="./images/header/header-milk.png"
+        srcset="
+          ./images/header/header-milk.png    124w,
+          ./images/header/header-milk@2.png  248w,
+          ./images/header/header-milkd.png   188w,
+          ./images/header/header-milkd@2.png 376w
+        "
+        sizes="(min-width: 1200px) 188px, (min-width: 768px) 124px, 100vw"
+      />
       <figcaption class="header__figcaption">
         <div class="header__lorem">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et
         </div>
         <div class="header__arrow-container">
-          <img alt="arrow" src="./images/images-tablet/arrow-right.png" width="26" height="26" />
+          <img
+            alt="arrow"
+            src="./images/header/arrow-right.png"
+            srcset="
+              ./images/header/arrow-right.png    18w,
+              ./images/header/arrow-right@2.png  36w,
+              ./images/header/arrow-rightd.png   26w,
+              ./images/header/arrow-rightd@2.png 52w
+            "
+            sizes="(min-width: 1200px) 26px, (min-width: 768px) 18px, 100vw"
+          />
         </div>
       </figcaption>
     </form>
@@ -70,6 +102,13 @@
       class="header__tasty"
       alt="women eating ice cream"
       src="./images/header/header-tasty.png"
+      srcset="
+        ./images/header/header-tasty.png    168w,
+        ./images/header/header-tasty@2.png  336w,
+        ./images/header/header-tastyd.png   293w,
+        ./images/header/header-tastyd@2.png 586w
+      "
+      sizes="(min-width: 1200px) 293px, (min-width: 768px) 168px, 100vw"
     />
   </div>
 </header>
