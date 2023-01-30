@@ -1,0 +1,30 @@
+.gallery {
+  position: relative;
+  margin: 0 auto;
+  display: block;
+  max-width: 480px;
+  width: 100%;
+  height: auto;
+  @include tablet{
+    max-width:768px;
+  }
+  @include desktop{
+    max-width:1280px;
+  }
+
+  &:after {
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    content: '';
+    height: 39.5%;
+    display: block;
+    background: $howItsMadeBackground;
+  }
+
+  &__img {
+    display: block;
+    margin:0 auto;
+  }
+}
+

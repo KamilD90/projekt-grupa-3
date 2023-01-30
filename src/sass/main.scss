@@ -5,7 +5,9 @@
 // Style dla pliku z przykładem HTML fragmentu
 @use './utils/vars' as *;
 @import './utils/mixins.scss';
+@import './modules/swiper.scss';
 @import './partials/body.scss';
+@import './partials/customer';
 @import './partials/products.scss';
 @import './partials/hero-header';
 @import './partials/button';
@@ -14,4 +16,4 @@
 @import './partials/contacts';
 @import './partials/footer.scss';
 @import './partials/mobile-menu';
-
+@import './partials/gallery';
