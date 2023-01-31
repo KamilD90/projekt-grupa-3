@@ -11,6 +11,12 @@
     padding-top: 174px;
   }
 
+  &__cow {
+    width: 100%;
+    vertical-align: top;
+    margin-bottom: 166px;
+  }
+
   &__wrapper {
     position: relative;
     z-index: 1;
@@ -93,13 +99,11 @@
     @include tablet {
       font-size: 14px;
       line-height: 1.76;
-      /* padding: 0 2px 0 17px;*/
       padding-top: 50px;
     }
     @include desktop {
       font-size: 16px;
       line-height: 1.76;
-      /* padding: 0 2px 0 74px;*/
     }
   }
 
