@@ -66,12 +66,12 @@
 
     @include tablet {
       flex-direction: row;
-      justify-content: start;
+      justify-content: space-around;
     }
 
     @include desktop {
       flex-direction: row;
-      justify-content: start;
+      justify-content: space-around;
     }
   }
 
@@ -91,10 +91,12 @@
     @include tablet {
       font-size: 14px;
       line-height: 1.76;
+      padding: 0 2px 0 17px;
     }
     @include desktop {
       font-size: 16px;
       line-height: 1.76;
+      padding: 0 2px 0 74px;
     }
   }
 
@@ -109,10 +111,12 @@
     @include tablet {
       font-size: 14px;
       line-height: 1.76;
+      padding: 0 2px 0 17px;
     }
     @include desktop {
       font-size: 14px;
       line-height: 1.94;
+      padding: 0 2px 0 74px;
     }
   }
 
@@ -134,12 +138,6 @@
   }
 }
 
-/*@media screen and (max-width: 767px) {
-  .about__flex {
-    display: column;
-  }
-}*/
-
 .btn {
   font-weight: 700;
   font-size: 14px;
@@ -150,6 +148,16 @@
   height: 44px;
   margin: 17px 74px 0 30px;
   padding-left: 37px;
+
+  @include tablet {
+    font-size: 16px;
+    margin: 62px 166px 66px 17px;
+  }
+
+  @include desktop {
+    font-size: 16px;
+    margin: 62px 166px 66px 74px;
+  }
 
   &__icon {
     margin-top: 2px;
