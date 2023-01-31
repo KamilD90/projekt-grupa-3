@@ -27,14 +27,14 @@
   &__wrapper {
     position: relative;
     z-index: 1;
-  }
 
-  @include tablet {
-    padding-top: 130px;
-  }
+    @include tablet {
+      padding-top: 130px;
+    }
 
-  @include desktop {
-    padding-top: 174px;
+    @include desktop {
+      padding-top: 174px;
+    }
   }
 
   &__cow {
@@ -50,61 +50,34 @@
     }
   }
 
-  &__wrapper {
-    position: relative;
-    z-index: 1;
-  }
-
-  /*&__section {
-    font-family: Titan One;
-    font-weight: 400;
-    line-height: 1.145;
-    text-align: center;
-    margin: 0 41px 26px 39px;
-
-    @include tablet {
-      margin: 0 136px 50px 137px;
-    }
-
-    @include desktop {
-      margin: 0 259px 55px 259px;
-    }
-  }*/
-
-    @include tablet {
-      margin: 0 136px 50px 137px;
-    }
-
-    @include desktop {
-      margin: 0 259px 55px 259px;
-    }
-  }
-
   &__title-info {
     font-family: Titan One;
-    font-weight: 400;
     line-height: 1.145;
     text-align: center;
     margin: 0 41px 26px 39px;
     font-size: 18px;
     color: $pinkBackground2;
+    max-width: 200px;
+    margin: 0 auto;
 
     @include tablet {
       font-size: 26px;
+      max-width: 430px;
     }
     @include desktop {
       font-size: 30px;
+      max-width: 535px;
     }
   }
 
   &__title {
     font-family: Titan One;
-    font-weight: 400;
     margin-top: 15px;
     font-size: 34px;
     line-height: 1.145;
     letter-spacing: 0.04em;
     color: $headTextColor;
+    text-align: center;
 
     @include tablet {
       font-size: 48px;
@@ -189,12 +162,14 @@
     position: absolute;
     width: 100%;
     bottom: 61px;
-  }
-}
 
-@media screen and (min-width: 768px) and (max-width: 1279px) {
-  .about__background {
-    display: none;
+    @include tablet {
+      display: none;
+    }
+
+    @include desktop {
+      display: block;
+    }
   }
 }
 
