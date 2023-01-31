@@ -52,21 +52,18 @@
     flex-direction: column;
     gap: 16px;
     padding-bottom: 98px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0 20px 0 20px;
     justify-content: center;
     align-items: center;
     @include tablet {
       flex-direction: row;
       gap: 20px;
-      padding-left: 34px;
-      padding-right: 34px;
+      padding: 0 34px 0 34px;
       padding-bottom: 112px;
     }
     @include desktop {
       gap: 29px;
-      padding-left: 117px;
-      padding-right: 117px;
+      padding: 0 117px 0 117px;
       padding-bottom: 119px;
     }
   }
@@ -200,10 +197,15 @@
   }
   &__img {
     position: absolute;
-
     top: -113px;
     left: 50%;
     transform: translate(-50%, 0);
+    @include desktop {
+      top: -210px;
+    }
+    @include tablet {
+      top: -102px;
+    }
   }
   &__img-arrow {
     margin-bottom: 41px;
