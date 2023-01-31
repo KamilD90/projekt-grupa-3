@@ -52,4 +52,15 @@
       margin-left: 10px;
     }
   }
+  &--hamburger {
+    background-color: $pinkBackground1;
+    padding: 0px;
+    @include tablet {
+      background-color: $pinkBackground2;
+    }
+  }
+  &--close {
+    background-color: $mobileMenuBackground;
+    padding: 0px;
+  }
 }

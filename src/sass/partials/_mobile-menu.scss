@@ -1,11 +1,12 @@
 .mobile-menu {
   position: fixed;
-  inset: 0;
+  top: 0px;
+  right: 0px;
   width: 250px;
   height: 502px;
   padding: 23.26px 20px 171px 21px;
   background-color: $mobileMenuBackground;
-  transform: translateX(250%);
+  transform: translateX(-200%);
   opacity: 0;
   z-index: 1000;
   transition: transform 250ms ease, opacity 250ms ease;
