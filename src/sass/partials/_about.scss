@@ -3,29 +3,104 @@
   padding-top: 125px;
   position: relative;
 
-  &__section {
-    font-family: Titan One;
-    font-weight: 400;
-    line-height: 1.14;
-    text-align: center;
-    width: 200px;
-    margin: 0 41px 26px 39px;
+  @include tablet {
+    padding-top: 130px;
   }
 
+  @include desktop {
+    padding-top: 174px;
+  }
+
+  &__cow {
+    width: 100%;
+    vertical-align: top;
+
+    @include tablet {
+      margin-bottom: 166px;
+    }
+
+    @include desktop {
+      margin-bottom: 39px;
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+    z-index: 1;
+  }
+
+  /*&__section {
+    font-family: Titan One;
+    font-weight: 400;
+    line-height: 1.145;
+    text-align: center;
+    margin: 0 41px 26px 39px;
+
+    @include tablet {
+      margin: 0 136px 50px 137px;
+    }
+
+    @include desktop {
+      margin: 0 259px 55px 259px;
+    }
+  }*/
+
   &__title-info {
+    font-family: Titan One;
+    font-weight: 400;
+    line-height: 1.145;
+    text-align: center;
+    margin: 0 41px 26px 39px;
     font-size: 18px;
     color: $pinkBackground2;
+
+    @include tablet {
+      font-size: 26px;
+    }
+    @include desktop {
+      font-size: 30px;
+    }
   }
 
   &__title {
+    font-family: Titan One;
+    font-weight: 400;
     margin-top: 15px;
     font-size: 34px;
+    line-height: 1.145;
     letter-spacing: 0.04em;
     color: $headTextColor;
+
+    @include tablet {
+      font-size: 48px;
+    }
+
+    @include desktop {
+      font-size: 58px;
+    }
+  }
+
+  &__flex {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    @include tablet {
+      flex-direction: row;
+      justify-content: space-around;
+      gap: 17px;
+    }
+
+    @include desktop {
+      flex-direction: row;
+      justify-content: space-around;
+      gap: 74px;
+    }
   }
 
   &__text {
     text-align: left;
+    background-color: transparent;
   }
 
   &__section-text {
@@ -35,6 +110,19 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 1.62;
+
+    @include tablet {
+      font-size: 14px;
+      line-height: 1.76;
+      padding: 0;
+      padding-top: 50px;
+      margin-top: 0;
+    }
+    @include desktop {
+      font-size: 16px;
+      line-height: 1.76;
+      padding-top: 60px;
+    }
   }
 
   &__section-milk {
@@ -44,6 +132,17 @@
     font-size: 12px;
     line-height: 1.62;
     color: $lightTextColor;
+
+    @include tablet {
+      font-size: 14px;
+      line-height: 1.76;
+      padding: 0;
+    }
+    @include desktop {
+      font-size: 14px;
+      line-height: 1.94;
+      margin-top: 35px;
+    }
   }
 
   &__break {
@@ -58,6 +157,12 @@
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .about__background {
+    display: none;
+  }
+}
+
 .btn {
   font-weight: 700;
   font-size: 14px;
@@ -68,6 +173,16 @@
   height: 44px;
   margin: 17px 74px 0 30px;
   padding-left: 37px;
+
+  @include tablet {
+    font-size: 16px;
+    margin: 62px 166px 66px 0;
+  }
+
+  @include desktop {
+    font-size: 16px;
+    margin: 45px 166px 146px 0;
+  }
 
   &__icon {
     margin-top: 2px;
