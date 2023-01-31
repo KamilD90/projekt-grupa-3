@@ -7,9 +7,13 @@ header {
   overflow: hidden;
   @include tablet {
     height: 399px;
+    max-width: 768px;
+    padding: 0 32px;
   }
   @include desktop {
     height: 665px;
+    max-width: 1200px;
+    padding: 0 115px 0 48px;
   }
   &__info {
     display: flex;
@@ -249,20 +253,6 @@ header {
     color: $defaultBackground;
     @include desktop {
       font-size: 14px;
-    }
-  }
-}
-
-@include tablet {
-  .container {
-    max-width: 768px;
-    padding: 0 32px;
-  }
-
-  @include desktop {
-    .container {
-      max-width: 1200px;
-      padding: 0 115px 0 48px;
     }
   }
 }

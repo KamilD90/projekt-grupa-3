@@ -29,6 +29,32 @@
     z-index: 1;
   }
 
+  @include tablet {
+    padding-top: 130px;
+  }
+
+  @include desktop {
+    padding-top: 174px;
+  }
+
+  &__cow {
+    width: 100%;
+    vertical-align: top;
+
+    @include tablet {
+      margin-bottom: 166px;
+    }
+
+    @include desktop {
+      margin-bottom: 39px;
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+    z-index: 1;
+  }
+
   /*&__section {
     font-family: Titan One;
     font-weight: 400;
@@ -44,6 +70,15 @@
       margin: 0 259px 55px 259px;
     }
   }*/
+
+    @include tablet {
+      margin: 0 136px 50px 137px;
+    }
+
+    @include desktop {
+      margin: 0 259px 55px 259px;
+    }
+  }
 
   &__title-info {
     font-family: Titan One;
