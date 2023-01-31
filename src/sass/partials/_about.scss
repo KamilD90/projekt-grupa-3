@@ -11,6 +11,19 @@
     padding-top: 174px;
   }
 
+  &__cow {
+    width: 100%;
+    vertical-align: top;
+
+    @include tablet {
+      margin-bottom: 166px;
+    }
+
+    @include desktop {
+      margin-bottom: 39px;
+    }
+  }
+
   &__wrapper {
     position: relative;
     z-index: 1;
@@ -28,7 +41,7 @@
     }
 
     @include desktop {
-      margin: 0 374px 55px 374px;
+      margin: 0 259px 55px 259px;
     }
   }
 
@@ -67,11 +80,13 @@
     @include tablet {
       flex-direction: row;
       justify-content: space-around;
+      gap: 17px;
     }
 
     @include desktop {
       flex-direction: row;
       justify-content: space-around;
+      gap: 74px;
     }
   }
 
@@ -91,12 +106,14 @@
     @include tablet {
       font-size: 14px;
       line-height: 1.76;
-      padding: 0 2px 0 17px;
+      padding: 0;
+      padding-top: 50px;
+      margin-top: 0;
     }
     @include desktop {
       font-size: 16px;
       line-height: 1.76;
-      padding: 0 2px 0 74px;
+      padding-top: 60px;
     }
   }
 
@@ -111,12 +128,12 @@
     @include tablet {
       font-size: 14px;
       line-height: 1.76;
-      padding: 0 2px 0 17px;
+      padding: 0;
     }
     @include desktop {
       font-size: 14px;
       line-height: 1.94;
-      padding: 0 2px 0 74px;
+      margin-top: 35px;
     }
   }
 
@@ -151,12 +168,12 @@
 
   @include tablet {
     font-size: 16px;
-    margin: 62px 166px 66px 17px;
+    margin: 62px 166px 66px 0;
   }
 
   @include desktop {
     font-size: 16px;
-    margin: 62px 166px 66px 74px;
+    margin: 45px 166px 146px 0;
   }
 
   &__icon {
