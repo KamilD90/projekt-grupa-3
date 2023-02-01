@@ -195,6 +195,7 @@ header {
     }
     @include desktop {
       top: 429px;
+      gap: 30px;
     }
   }
   &__figcaption {
