@@ -8,12 +8,11 @@
   }
 
   @include desktop {
-    padding-top: 174px;
+    padding-top: 125px;
   }
 
   &__cow {
     width: 100%;
-    vertical-align: top;
 
     @include tablet {
       margin-bottom: 166px;
