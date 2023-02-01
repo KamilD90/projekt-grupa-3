@@ -1,20 +1,22 @@
 .advantages {
   background-color: $howItsMadeBackground;
   margin: 0 auto;
-  padding: 39px 70px 97px 0;
+  padding-top: 39px;
+  padding-bottom: 97px;
+
   @include tablet {
-    padding: 66px 42px 140px 2px;
+    padding: 66px 0 140px 0;
   }
 
   @include desktop {
-    padding: 39px 115px 143px;
+    padding: 39px 0 143px;
   }
 
   &__title {
     display: none;
   }
 
-  &__card {
+  &__list {
     display: flex;
     flex-wrap: wrap;
     gap: 38px;
@@ -25,11 +27,13 @@
       flex-wrap: nowrap;
       padding-top: 0;
       gap: 60px;
+      margin-left: 42px;
     }
 
     @include desktop {
       gap: 30px;
       flex-wrap: nowrap;
+      margin-left: 81px;
     }
   }
 
