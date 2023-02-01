@@ -17,7 +17,6 @@
       padding: 0 114px 97px;
     }
   }
-
   &__titles {
     display: flex;
     flex-direction: column;
@@ -100,19 +99,20 @@
     background: $defaultSvgColor;
     width: 34px;
     height: 34px;
+    border: 1px solid #fff;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    transition: background-color 0.6s ease;
+    transition: all 0.6s ease;
 
     &:hover,
     &:focus {
       background-color: $headTextColor;
+      transform: rotateY(360deg);
     }
   }
-
   &__social-icon {
     fill: $defaultBackground;
   }
