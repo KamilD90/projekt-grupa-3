@@ -52,18 +52,18 @@
     flex-direction: column;
     gap: 16px;
     padding-bottom: 98px;
-    padding: 0 20px 0 20px;
+    padding: 0 20px;
     justify-content: center;
     align-items: center;
     @include tablet {
       flex-direction: row;
       gap: 20px;
-      padding: 0 34px 0 34px;
+      padding: 0 34px;
       padding-bottom: 112px;
     }
     @include desktop {
       gap: 29px;
-      padding: 0 117px 0 117px;
+      padding: 0 117px;
       padding-bottom: 119px;
     }
   }
