@@ -1,15 +1,16 @@
 .advantages {
   background-color: $howItsMadeBackground;
-  margin: 0 auto;
-  padding: 0 20px;
+  padding-top: 39px;
   padding-bottom: 97px;
 
   @include tablet {
+    padding-top: 0;
     padding-left: 36px;
     padding-bottom: 140px;
   }
 
   @include desktop {
+    padding-top: 0;
     padding-left: 115px;
   }
 
@@ -22,31 +23,17 @@
     flex-wrap: wrap;
     gap: 38px;
     list-style: none;
+    padding-top: 38px;
 
     @include tablet {
       flex-wrap: nowrap;
+      margin-top: 0;
     }
 
     @include desktop {
       flex-wrap: nowrap;
       margin-left: 118px;
     }
-  }
-
-  &__img {
-    margin-top: 38px;
-
-    @include tablet {
-      margin-top: 0;
-    }
-  }
-
-  &__icon::after,
-  &__icon::before {
-    content: '';
-    display: block;
-    width: 100%;
-    position: absolute;
   }
 
   &__item {
