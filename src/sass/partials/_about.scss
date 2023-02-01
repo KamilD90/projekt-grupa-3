@@ -6,18 +6,30 @@
   @include tablet {
     padding-top: 130px;
   }
-
   @include desktop {
     padding-top: 125px;
+  }
+  
+   &__background {
+    position: absolute;
+    width: 100%;
+    bottom: 61px;
+
+    @include tablet {
+      display: none;
+    }
+
+    @include desktop {
+      display: block;
+    }
   }
 
   &__cow {
     width: 100%;
-
+    
     @include tablet {
       margin-bottom: 166px;
     }
-
     @include desktop {
       margin-bottom: 39px;
     }
@@ -27,50 +39,25 @@
     position: relative;
     z-index: 1;
 
-    @include tablet {
-      padding-top: 130px;
-    }
-
-    @include desktop {
-      padding-top: 174px;
-    }
-  }
-
-  &__cow {
-    width: 100%;
-    vertical-align: top;
-
-    @include tablet {
-      margin-bottom: 166px;
-    }
-
-    @include desktop {
-      margin-bottom: 39px;
-    }
-  }
-
   &__title-info {
+    margin: 0 auto;
     font-family: Titan One;
+    font-size: 18px;
     line-height: 1.145;
     text-align: center;
-    margin: 0 41px 26px 39px;
-    font-size: 18px;
     color: $pinkBackground2;
-    max-width: 200px;
-    margin: 0 auto;
-
+    
     @include tablet {
       font-size: 26px;
-      max-width: 430px;
     }
     @include desktop {
       font-size: 30px;
-      max-width: 535px;
     }
   }
 
   &__title {
     font-family: Titan One;
+    max-width: 200px;
     margin-top: 15px;
     font-size: 34px;
     line-height: 1.145;
@@ -80,10 +67,12 @@
 
     @include tablet {
       font-size: 48px;
+      max-width: 430px;
     }
 
     @include desktop {
       font-size: 58px;
+      max-width: 535px;
     }
   }
 
@@ -91,6 +80,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    gap:46px;
 
     @include tablet {
       flex-direction: row;
@@ -108,42 +98,44 @@
   &__text {
     text-align: left;
     background-color: transparent;
+    padding: 0 30px;
+    
+    @include tablet{  
+    padding: 0;
+    }
   }
 
   &__section-text {
-    color: $defaultTextColor;
     padding: 0 30px;
-    margin-top: 46px;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.62;
+    color: $defaultTextColor;
 
     @include tablet {
-      font-size: 14px;
-      line-height: 1.76;
-      padding: 0;
       padding-top: 50px;
       margin-top: 0;
+      font-size: 14px;
+      line-height: 1.76;
     }
     @include desktop {
       font-size: 16px;
       line-height: 1.76;
-      padding-top: 60px;
+      padding-top: 51px;
     }
   }
 
   &__section-milk {
     margin-top: 47px;
-    padding: 0 30px;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.62;
     color: $lightTextColor;
 
     @include tablet {
+    margin-top: 49px;
       font-size: 14px;
       line-height: 1.76;
-      padding: 0;
     }
     @include desktop {
       font-size: 14px;
@@ -153,22 +145,8 @@
   }
 
   &__break {
-    padding-top: 10px;
+    padding-top: 24px;
     display: block;
-  }
-
-  &__background {
-    position: absolute;
-    width: 100%;
-    bottom: 61px;
-
-    @include tablet {
-      display: none;
-    }
-
-    @include desktop {
-      display: block;
-    }
   }
 }
 
