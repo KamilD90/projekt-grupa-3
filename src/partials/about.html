@@ -1,20 +1,23 @@
 <section class="about">
+  <div class="container">
   <img
     class="about__background"
     alt="plamy rozlanego mleka"
     src="./images/images-desktop/how-its-made-bg.webp"
     srcset="
-      ./images/images-desktop/how-its-made-bg.webp    320w,
-      ./images/images-desktop/how-its-made-bg@2x.webp 640w
+      ./images/images-mobile/how-its-made-bg.webp      320w,
+      ./images/images-mobile/how-its-made-bg.webp      640w,
+      ./images/images-desktop/how-its-made-bg.webp    1282w,
+      ./images/images-desktop/how-its-made-bg@2x.webp 2564w
     "
-    sizes="(min-width: 1280px) 1280px, (min-width: 480px) 320px , 100vw"
+    sizes="(min-width: 1280px) 1282px, (min-width: 320px) 320px , 100vw"
   />
-  <div class="container about__wrapper">
-    <div class="about__section">
+
+    
       <p class="about__title-info">TRADITION AND LOVE</p>
       <h2 class="about__title">HOW IT'S MADE?</h2>
-    </div>
-    <div class="about__flex">
+   
+     <div class="about__flex">
       <img
         class="about__cow"
         alt="krowa i dzbanek z mlekiem"
@@ -27,7 +30,7 @@
           ./images/images-mobile/how-its-made.webp      280w,
           ./images/images-mobile/how-its-made@2x.webp   560w
         "
-        sizes="(min-width: 1280px) 516px, (min-width: 768px) 340px, (min-width: 480px) 280px , 100vw"
+        sizes="(min-width: 1280px) 516px, (min-width: 768px) 340px, (min-width: 320px) 280px , 100vw"
       />
       <div class="about__text">
         <p class="about__section-text">
@@ -40,14 +43,15 @@
           maximus. Cras massa nibh, tincidunt.
           <span class="about__break">Aliquam erat volutpat. Aenean accumsan.</span>
         </p>
-
-        <button class="button button--made btn" type="button">
-          Read more
-          <svg width="6.5" height="10" class="btn__icon">
-            <use href="./images/icons/icons-project.svg#icon-Vector-1"></use>
-          </svg>
-        </button>
       </div>
+      <button class="button button--made btn" type="button">
+        Read more
+        <svg width="6.5" height="10" class="btn__icon">
+          <use href="./images/icons/icons-project.svg#icon-Vector-1"></use>
+        </svg>
+      </button>
     </div>
   </div>
+  
+</div>
 </section>
