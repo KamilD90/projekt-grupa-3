@@ -1,18 +1,13 @@
 .advantages {
   background-color: $howItsMadeBackground;
-  padding-top: 39px;
-  padding-bottom: 97px;
-  
-
+  margin: 0 auto;
+  padding: 39px 70px 97px 0;
   @include tablet {
-    padding-top: 0;
-    padding-left: 36px;
-    padding-bottom: 140px;
+    padding: 66px 42px 140px 2px;
   }
 
   @include desktop {
-    padding-top: 0;
-    padding-left: 115px;
+    padding: 39px 115px 143px;
   }
 
   &__title {
@@ -28,20 +23,20 @@
 
     @include tablet {
       flex-wrap: nowrap;
-      margin-top: 0;
+      padding-top: 0;
+      gap: 60px;
+
     }
 
     @include desktop {
+      gap: 30px;
       flex-wrap: nowrap;
-      margin-left: 118px;
     }
   }
 
   &__item {
     color: $headTextColor;
     font-family: 'Titan One';
-    font-style: normal;
-    font-weight: 400;
     font-size: 36px;
     line-height: 41px;
     letter-spacing: 0.04em;
@@ -53,7 +48,6 @@
       margin-top: 36px;
       margin-bottom: 13px;
     }
-
     @include desktop {
       margin-top: 40px;
       margin-bottom: 15px;

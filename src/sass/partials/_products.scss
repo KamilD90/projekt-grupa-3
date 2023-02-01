@@ -24,7 +24,7 @@
     @include desktop {
       margin-top: 127px;
       font-size: 30px;
-      line-height: 1.1333;
+      line-height: 1.133;
     }
   }
 
@@ -40,6 +40,11 @@
       font-size: 48px;
       line-height: 1.145;
       margin-bottom: 39px;
+      margin-top: 46px;
+    }
+    @include desktop {
+      font-size: 58px;
+      line-height: 1.137;
     }
   }
   &__dessert-wrapper {
@@ -47,16 +52,19 @@
     flex-direction: column;
     gap: 16px;
     padding-bottom: 98px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0 20px;
     justify-content: center;
     align-items: center;
     @include tablet {
       flex-direction: row;
       gap: 20px;
-      padding-left: 34px;
-      padding-right: 34px;
+      padding: 0 34px;
       padding-bottom: 112px;
+    }
+    @include desktop {
+      gap: 29px;
+      padding: 0 117px;
+      padding-bottom: 119px;
     }
   }
 
@@ -64,13 +72,43 @@
     background-color: #ffb8ca;
     list-style: none;
     border-radius: 24px;
-    margin-top: 130px;
+    margin-top: 161px;
+
     position: relative;
     max-width: 280px;
     @include tablet {
+      max-width: 220px;
+      margin-top: 150px;
+    }
+    @include desktop {
+      max-width: 329px;
+      margin-top: 259px;
+    }
+  }
+  &__ice-cream-products--coffee {
+    background-color: #f0d1a5;
+
+    max-width: 280px;
+    @include tablet {
+      max-width: 220px;
+    }
+    @include desktop {
+      max-width: 329px;
     }
   }
 
+  &__ice-cream-products--milkshakes {
+    background-color: #c2e297;
+    max-width: 280px;
+    @include tablet {
+      max-width: 220px;
+      margin-top: 150px;
+    }
+    @include desktop {
+      max-width: 329px;
+      margin-top: 259px;
+    }
+  }
   &__dessert-description {
     font-family: Titan one;
     color: #ffffff;
@@ -78,39 +116,15 @@
     line-height: 1.15;
     text-align: center;
     letter-spacing: 0.04em;
-    margin-top: 22px;
-  }
-
-  &__ice-cream-products--coffee {
-    background-color: #f0d1a5;
-    list-style: none;
-    border-radius: 24px;
-    justify-content: center;
-    margin-top: 130px;
-    max-width: 280px;
-    @include tablet {
-      max-width: 220px;
+    @include desktop {
+      font-size: 30px;
+      line-height: 1.133;
     }
   }
 
-  &__ice-cream-products--milkshakes {
-    background-color: #c2e297;
-    gap: 16px;
-    list-style: none;
-    border-radius: 24px;
-    justify-content: center;
-    margin-top: 130px;
-    max-width: 280px;
-    @include tablet {
-      max-width: 220px;
-    }
-  }
-
-  &__tekst-wrapper {
+  &__text-wrapper-item {
     display: flex;
     flex-direction: column;
-  }
-  &__tekst-wrapper-item {
     margin-top: 161px;
     gap: 30px;
     display: flex;
@@ -120,6 +134,11 @@
       margin-top: 152px;
       max-width: 220px;
     }
+    @include desktop {
+      gap: 32px;
+      max-width: 329px;
+      margin-top: 259px;
+    }
   }
   &__products-lorem {
     display: flex;
@@ -127,8 +146,10 @@
     padding-right: 39px;
     padding-left: 41px;
     @include tablet {
-      padding-right: 11px;
-      padding-left: 11px;
+      padding: 0 11px;
+    }
+    @include desktop {
+      padding: 0 44px;
     }
   }
 
@@ -176,11 +197,15 @@
   }
   &__img {
     position: absolute;
-    width: 249px;
-    height: 252px;
     top: -113px;
     left: 50%;
     transform: translate(-50%, 0);
+    @include desktop {
+      top: -210px;
+    }
+    @include tablet {
+      top: -102px;
+    }
   }
   &__img-arrow {
     margin-bottom: 41px;
@@ -188,6 +213,19 @@
     height: 40px;
     @include tablet {
       margin-bottom: 40px;
+    }
+    @include desktop {
+      margin-top: 10px;
+      margin-bottom: 40px;
+    }
+  }
+  &__products-container {
+    height: 139px;
+    @include tablet {
+      height: 122px;
+    }
+    @include desktop {
+      height: 125px;
     }
   }
 }
