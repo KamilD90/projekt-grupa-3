@@ -219,4 +219,13 @@
       margin-bottom: 40px;
     }
   }
+  &__products-container {
+    height: 139px;
+    @include tablet {
+      height: 122px;
+    }
+    @include desktop {
+      height: 125px;
+    }
+  }
 }
