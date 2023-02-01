@@ -25,12 +25,21 @@
       flex-wrap: nowrap;
       padding-top: 0;
       gap: 60px;
-
     }
 
     @include desktop {
       gap: 30px;
       flex-wrap: nowrap;
+    }
+  }
+
+  &__list-item {
+    max-width: 230px;
+    @include tablet {
+      max-width: 180px;
+    }
+    @include desktop {
+      max-width: 330px;
     }
   }
 
@@ -60,5 +69,12 @@
     font-weight: 700;
     font-size: 12px;
     line-height: 170%;
+    @include tablet {
+      margin-right: 20px;
+    }
+
+    @include desktop {
+      margin-right: 80px;
+    }
   }
 }
