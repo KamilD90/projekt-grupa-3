@@ -19,31 +19,19 @@
     flex-wrap: wrap;
     gap: 38px;
     list-style: none;
+    padding-top: 38px;
 
     @include tablet {
       flex-wrap: nowrap;
+      padding-top: 0;
       gap: 60px;
+
     }
 
     @include desktop {
       gap: 30px;
       flex-wrap: nowrap;
     }
-  }
-
-  &__img {
-    margin-top: 38px;
-    @include tablet {
-      margin-top: 0;
-    }
-  }
-
-  &__icon::after,
-  &__icon::before {
-    content: '';
-    display: block;
-    width: 100%;
-    position: absolute;
   }
 
   &__item {
