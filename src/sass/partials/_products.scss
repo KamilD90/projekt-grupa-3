@@ -125,19 +125,19 @@
   &__text-wrapper-item {
     display: flex;
     flex-direction: column;
-    margin-top: 161px;
+    margin-top: 28px;
     gap: 30px;
     display: flex;
     flex-direction: column;
     max-width: 280px;
     @include tablet {
-      margin-top: 152px;
+      margin-top: 30px;
       max-width: 220px;
     }
     @include desktop {
       gap: 32px;
       max-width: 329px;
-      margin-top: 259px;
+      margin-top: 38px;
     }
   }
   &__products-lorem {
@@ -200,11 +200,11 @@
     top: -113px;
     left: 50%;
     transform: translate(-50%, 0);
-    @include desktop {
-      top: -210px;
-    }
     @include tablet {
       top: -102px;
+    }
+    @include desktop {
+      top: -210px;
     }
   }
   &__img-arrow {
