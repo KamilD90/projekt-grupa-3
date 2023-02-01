@@ -51,7 +51,7 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
-    padding-bottom: 98px;
+    padding-bottom: 98px 0;
     padding: 0 20px;
     justify-content: center;
     align-items: center;
@@ -59,12 +59,12 @@
       flex-direction: row;
       gap: 20px;
       padding: 0 34px;
-      padding-bottom: 112px;
+      padding-bottom: 112px 0;
     }
     @include desktop {
       gap: 29px;
-      padding: 0 117px;
-      padding-bottom: 119px;
+      padding: 0px 117px;
+      padding-bottom: 119 0px;
     }
   }
 
@@ -100,6 +100,7 @@
   &__ice-cream-products--milkshakes {
     background-color: #c2e297;
     max-width: 280px;
+
     @include tablet {
       max-width: 220px;
       margin-top: 150px;
@@ -122,7 +123,7 @@
     }
   }
 
-  &__text-wrapper-item {
+  &__text-wrapper {
     display: flex;
     flex-direction: column;
     margin-top: 28px;
@@ -196,20 +197,16 @@
     justify-content: center;
   }
 
-  &__ice-cream-item {
-    position: relative;
-    z-index: 1;
-  }
   &__img {
     position: absolute;
     top: -113px;
     left: 50%;
     transform: translate(-50%, 0);
     @include tablet {
-      top: -102px;
+      bottom: 0;
     }
     @include desktop {
-      top: -210px;
+      bottom: 0;
     }
   }
   &__img-arrow {
@@ -226,6 +223,7 @@
   }
   &__products-container {
     height: 139px;
+
     @include tablet {
       height: 122px;
     }
