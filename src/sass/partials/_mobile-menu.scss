@@ -3,17 +3,16 @@
   top: 0px;
   right: 0px;
   width: 250px;
-  height: 502px;
+  height: 100%;
   padding: 23.26px 20px 171px 21px;
   background-color: $mobileMenuBackground;
-  transform: translateX(-200%);
+  transform: translateX(100%);
   opacity: 0;
   z-index: 1000;
   transition: transform 250ms ease, opacity 250ms ease;
   @include tablet {
     padding: 23.26px 34px 689px 24px;
     width: 254px;
-    height: 1020px;
   }
   @include desktop {
     display: none;
