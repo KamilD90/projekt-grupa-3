@@ -152,21 +152,6 @@
     }
   }
 
-  &__description {
-    display: flex;
-    text-align: center;
-    padding-right: 39px;
-    padding-left: 41px;
-
-    @include tablet {
-      padding: 0 11px;
-    }
-
-    @include desktop {
-      padding: 0 44px;
-    }
-  }
-
   &__circle-box {
     display: flex;
     justify-content: center;
@@ -185,7 +170,6 @@
   &__description {
     display: flex;
     align-items: center;
-    font-family: 'DM Sans';
     font-size: 14px;
     line-height: 1.5;
     letter-spacing: 0.04em;
@@ -200,12 +184,13 @@
       max-height: 124px;
       padding: 0 11px;
       vertical-align: top;
+    }
 
-      @include desktop {
-        font-size: 16px;
-        line-height: 1.75;
-        padding: 0 40px;
-      }
+    @include desktop {
+      font-size: 16px;
+      line-height: 1.75;
+      padding: 0 40px;
+      max-height: 106px;
     }
   }
 
