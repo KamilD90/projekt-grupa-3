@@ -168,13 +168,14 @@
   }
 
   &__description {
-    display: flex;
-    align-items: center;
+    text-align: center;
     font-size: 14px;
     line-height: 1.5;
     letter-spacing: 0.04em;
     font-weight: 700;
     color: #ffffff;
+    padding-right: 39px;
+    padding-left: 41px;
 
     @include tablet {
       display: -webkit-box;
@@ -187,6 +188,7 @@
     }
 
     @include desktop {
+      padding: 0 44px;
       font-size: 16px;
       line-height: 1.75;
       padding: 0 40px;
