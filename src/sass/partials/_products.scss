@@ -2,25 +2,23 @@
   color: black;
   background-color: #ffffff;
 
-  &__ice-cream-wrapper {
-    display: flex;
-    flex-direction: column;
-  }
-
   &__composition {
+    display: block;
     color: #ffb8ca;
     font-size: 18px;
-    margin-bottom: 15px;
+
     font-family: Titan one;
     line-height: 1.145;
     text-align: center;
     margin-top: 121px;
-    font-weight: 400;
+    margin-bottom: 15px;
+
     @include tablet {
       font-size: 26px;
       line-height: 1.153;
       margin-top: 122px;
     }
+
     @include desktop {
       margin-top: 127px;
       font-size: 30px;
@@ -28,103 +26,112 @@
     }
   }
 
-  &__header-products {
+  &__header {
     color: #d41443;
     font-size: 34px;
-    font-family: Titan one;
+    font-family: 'Titan one';
     text-align: center;
     line-height: 1.145;
     letter-spacing: 0.04em;
     margin-bottom: 31px;
+
     @include tablet {
       font-size: 48px;
-      line-height: 1.145;
       margin-bottom: 39px;
-      margin-top: 46px;
     }
+
     @include desktop {
       font-size: 58px;
       line-height: 1.137;
     }
   }
+
   &__dessert-wrapper {
     display: flex;
     flex-direction: column;
     gap: 16px;
-
     padding: 0 20px;
     padding-bottom: 98px;
     justify-content: center;
     align-items: center;
+
     @include tablet {
       flex-direction: row;
       gap: 20px;
-      padding: 0 34px;
-      padding-bottom: 112px 0;
+      padding: 0 34px 112px;
     }
+
     @include desktop {
       gap: 29px;
-      padding: 0px 117px;
-      padding-bottom: 119 0px;
+      padding: 0 117px 119px;
     }
   }
 
-  &__ice-cream-products {
-    background-color: #ffb8ca;
+  &__product {
     list-style: none;
     border-radius: 24px;
     margin-top: 161px;
-
     position: relative;
     max-width: 280px;
-    @include tablet {
-      max-width: 220px;
-      margin-top: 150px;
-    }
-    @include desktop {
-      max-width: 329px;
-      margin-top: 259px;
-    }
-  }
-  &__ice-cream-products--coffee {
-    background-color: #f0d1a5;
-
-    max-width: 280px;
-    @include tablet {
-      max-width: 220px;
-    }
-    @include desktop {
-      max-width: 329px;
-    }
-  }
-
-  &__ice-cream-products--milkshakes {
-    background-color: #c2e297;
-    max-width: 280px;
 
     @include tablet {
       max-width: 220px;
       margin-top: 150px;
     }
+
     @include desktop {
       max-width: 329px;
       margin-top: 259px;
     }
+
+    &--ice-cream {
+      background-color: #ffb8ca;
+    }
+
+    &--coffee {
+      background-color: #f0d1a5;
+    }
+
+    &--shake {
+      background-color: #c2e297;
+    }
   }
-  &__dessert-description {
-    font-family: Titan one;
+
+  &__img-wrapper {
+    position: relative;
+    height: 139px;
+
+    @include tablet {
+      height: 122px;
+    }
+
+    @include desktop {
+      height: 125px;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  &__title {
+    font-family: 'Titan one';
     color: #ffffff;
     font-size: 20px;
     line-height: 1.15;
     text-align: center;
     letter-spacing: 0.04em;
+
     @include desktop {
       font-size: 30px;
       line-height: 1.133;
     }
   }
 
-  &__text-wrapper {
+  &__details {
     display: flex;
     flex-direction: column;
     margin-top: 28px;
@@ -132,24 +139,29 @@
     display: flex;
     flex-direction: column;
     max-width: 280px;
+
     @include tablet {
       margin-top: 30px;
       max-width: 220px;
     }
+
     @include desktop {
       gap: 32px;
       max-width: 329px;
       margin-top: 38px;
     }
   }
-  &__products-lorem {
+
+  &__description {
     display: flex;
     text-align: center;
     padding-right: 39px;
     padding-left: 41px;
+
     @include tablet {
       padding: 0 11px;
     }
+
     @include desktop {
       padding: 0 44px;
     }
@@ -160,6 +172,7 @@
     justify-content: center;
     gap: 4px;
   }
+
   &__circle::after {
     content: '';
     display: flex;
@@ -169,22 +182,25 @@
     background-color: #ffffff;
   }
 
-  &__products-lorem {
+  &__description {
     display: flex;
+    align-items: center;
     font-family: 'DM Sans';
     font-size: 14px;
     line-height: 1.5;
-    align-items: center;
     letter-spacing: 0.04em;
     font-weight: 700;
     color: #ffffff;
+
     @include tablet {
       display: -webkit-box;
       -webkit-line-clamp: 5;
       -webkit-box-orient: vertical;
       overflow: hidden;
+      max-height: 124px;
       padding: 0 11px;
       vertical-align: top;
+
       @include desktop {
         font-size: 16px;
         line-height: 1.75;
@@ -198,38 +214,23 @@
     justify-content: center;
   }
 
-  &__img {
-    position: absolute;
-    top: -113px;
-    left: 50%;
-    transform: translate(-50%, 0);
-    @include tablet {
-      bottom: 0;
-    }
-    @include desktop {
-      bottom: 0;
-    }
+  &__ice-cream-item {
+    position: relative;
+    z-index: 1;
   }
+
   &__img-arrow {
     margin-bottom: 41px;
     width: 40px;
     height: 40px;
+
     @include tablet {
       margin-bottom: 40px;
     }
+
     @include desktop {
       margin-top: 10px;
       margin-bottom: 50px;
-    }
-  }
-  &__products-container {
-    height: 139px;
-
-    @include tablet {
-      height: 122px;
-    }
-    @include desktop {
-      height: 125px;
     }
   }
 }
